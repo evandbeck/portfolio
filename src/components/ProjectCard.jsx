@@ -4,12 +4,12 @@ import { Card } from "react-bootstrap";
 function ProjectCard({name, github, demo, techStack}) {
 
   return (
-    <div>
+    <Card>
       <div>{name}</div>
       <div>{github}</div>
       <div>{demo}</div>
       <div>{techStack}</div>
-    </div>
+    </Card>
   )
 }
 

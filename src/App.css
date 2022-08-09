@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+/* CUSTOM */
+
+.Main {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.Header {
+  border: 1px solid red;
+  padding: 40px 0 30px;
+  display: flex;
+}
+
+.Navbar {
+  margin-left: auto;
+}
+
+.Navbar Button {
+  min-width: 100px;
+  margin: 2px;
+}
+
+.About {
+  height: 300px;
+}
+
+.background {
+  background-color: lightblue;
+  height: 520px;
+  left: 0;
+  min-width: 100%;
+  top: 0;
+}

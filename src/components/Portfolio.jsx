@@ -37,7 +37,7 @@ const displayProjects = projects.map(project => <ProjectCard {...project}/>)
 function Projects() {
   return (
     <div>
-      <p>Here are some of my projects.</p>
+      <p>Development Portfolio</p>
       {displayProjects}
     </div>
   )
