@@ -1,17 +1,28 @@
 import React from 'react';
 import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function About() {
 
   const techStack = ["JavaScript", "React", "Ruby", "Rails", "HTML5", "CSS3", "Bootstrap", "git"]
 
-  const stack = techStack.map(language => <Button size="sm" className="m-1">{language}</Button>)
+  const stack = techStack.map(language => <Button variant="secondary" size="sm" className="m-1">{language}</Button>)
 
   return (
-    <div className="About">
-      <div>I love to learn and build cool things.</div>
-      {stack}
-    </div>
+    <Container className="m-5">
+      <Row>
+          <div className="mb-3 d-flex align-items-center justify-content-center">
+            I love to learn and build cool things.
+          </div>
+      </Row>
+      <Row>
+        <div className="d-flex align-items-center justify-content-center">
+          {stack}
+        </div>
+      </Row>
+    </Container>
   )
 }
 

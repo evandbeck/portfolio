@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import Container from "react-bootstrap/Container";
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 const projects = [
@@ -35,15 +34,15 @@ const projects = [
   }
 ]
 
-const displayProjects = projects.map(project => <ProjectCard {...project}/>)
+const displayProjects = projects.map(project => <ProjectCard key={project.index} {...project}/>)
 
 function Projects() {
   return (
     <div>
       <p>Development Portfolio</p>
-      <Container>
+      <Container className="d-flex align-items-center justify-content-center">
         <Row>
-            {displayProjects}
+          {displayProjects}
         </Row>
       </Container>
     </div>

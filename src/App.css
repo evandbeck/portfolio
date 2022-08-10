@@ -46,7 +46,6 @@
 }
 
 .Header {
-  border: 1px solid red;
   padding: 40px 0 30px;
   display: flex;
 }
