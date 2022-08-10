@@ -1,24 +1,25 @@
 import React from 'react';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 
-function ProjectCard({name, github, demo, techStack}) {
+function ProjectCard({name, description, github, demo, techStack}) {
+
+  const stack = techStack.map(language => <Button size="sm" className="m-1">{language}</Button>)
 
   return (
-    <Row xs={1} md={2} className="g-4">
-      <Col>
-        <Card>
-          <Card.Header as="h4">{name}</Card.Header>
-          <div>{techStack}</div>
-          <Card.Footer>
-            <Button href={github}>GitHub</Button>
-            <Button href={demo}>View Demo</Button>
-          </Card.Footer>
-        </Card>
-        </Col>
-    </Row>
+          <Card style={{ width: '20rem' }} className="m-1">
+            <Card.Img variant="top" src=""/>
+            <Card.Header as="h4">{name}</Card.Header>
+            <Card.Body>{stack}</Card.Body>
+            <Card.Body>{description}</Card.Body>
+            <Card.Footer>
+              <ButtonGroup className="m-1">
+                <Button href={github}>GitHub</Button>
+                <Button href={demo}>View Demo</Button>
+              </ButtonGroup>
+            </Card.Footer>
+          </Card>
   )
 }
 
