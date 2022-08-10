@@ -11,7 +11,7 @@ function About() {
   const stack = techStack.map(language => <Button variant="secondary" size="sm" className="m-1">{language}</Button>)
 
   return (
-    <Container className="m-5">
+    <Container className="my-5">
       <Row>
           <div className="mb-3 d-flex align-items-center justify-content-center">
             I love to learn and build cool things.
