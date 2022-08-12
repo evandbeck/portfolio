@@ -60,9 +60,13 @@
 }
 
 .background {
-  background: linear-gradient(to bottom, #0D6EFD 70%, white);
+  background: linear-gradient(to bottom, #a0d2eb 70%, white);
   height: 520px;
   left: 0;
   min-width: 100%;
   top: 0;
 }
+
+/* .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #a0d2eb !important;
+} */
