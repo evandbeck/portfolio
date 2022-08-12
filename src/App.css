@@ -60,7 +60,7 @@
 }
 
 .background {
-  background-color: lightblue;
+  background: linear-gradient(to bottom, #0D6EFD 70%, white);
   height: 520px;
   left: 0;
   min-width: 100%;

@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Button from "react-bootstrap/Button";
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <Button variant="secondary" className="mt-3">Contact</Button>
+    </div>
   )
 }
 

@@ -6,15 +6,16 @@ import Col from 'react-bootstrap/Col';
 
 function ProjectCard({name, description, github, demo, techStack}) {
 
-  const stack = techStack.map(language => <Button key={language.index} size="sm" className="m-1">{language}</Button>)
+  const stack = techStack.map(language => <Button key={language.index} size="sm" variant="outline-secondary" className="m-1">{language}</Button>)
 
   return (
-    <Col>
-      <Card style={{ width: '20rem' }}>
+    <Col className="g-4">
+      <Card style={{ width: '15rem'}}>
         <Card.Img variant="top" src=""/>
-        <Card.Header as="h4">{name}</Card.Header>
+        <Card.Title className="m-2 d-flex align-items-center justify-content-center">{name}</Card.Title>
         <Card.Body>{stack}</Card.Body>
-        <Card.Body>{description}</Card.Body>
+        <Card.Text style={{ height: '10rem'}} size="sm" className="mx-4">{description}</Card.Text>
+        <Button variant="secondary" size="sm" className="m-3 d-flex align-items-center justify-content-center">About the Development</Button>
         <Card.Footer>
           <ButtonGroup className="m-1 d-flex align-items-center justify-content-center">
             <Button href={github}>GitHub</Button>

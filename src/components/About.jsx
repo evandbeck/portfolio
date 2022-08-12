@@ -2,7 +2,6 @@ import React from 'react';
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 function About() {
 
@@ -13,6 +12,12 @@ function About() {
   return (
     <Container className="my-5">
       <Row>
+          <div className="mb-3 d-flex align-items-center justify-content-center">
+            I love to learn and build cool things.
+          </div>
+          <div className="mb-3 d-flex align-items-center justify-content-center">
+            I love to learn and build cool things.
+          </div>
           <div className="mb-3 d-flex align-items-center justify-content-center">
             I love to learn and build cool things.
           </div>
