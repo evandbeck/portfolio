@@ -6,6 +6,17 @@ import Col from 'react-bootstrap/Col';
 
 function ProjectCard({name, description, github, demo, techStack}) {
 
+  // GitHub/Demo New Tab
+  // const handleClick = (e) => {
+  //   if (e.target.id === "1") {
+  //     window.open("https://github.com/evandbeck");
+  //   } else if (e.target.id === "2") {
+  //     window.open("https://www.linkedin.com/in/beckevan/");
+  //   } else if (e.target.id === "3") {
+  //     window.open("TBD");
+  //   };
+  // };
+
   const stack = techStack.map(language => <Button key={language.index} size="sm" variant="outline-secondary" className="m-1">{language}</Button>)
 
   return (
