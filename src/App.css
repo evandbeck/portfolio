@@ -60,7 +60,8 @@
 }
 
 .background {
-  background: linear-gradient(to bottom, #a0d2eb 70%, white);
+  /* background: linear-gradient(to bottom, #a0d2eb 70%, white); */
+  background: #a0d2eb;
   height: 520px;
   left: 0;
   min-width: 100%;
